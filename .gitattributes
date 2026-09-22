@@ -1,0 +1,7 @@
+# Keep the React application and web tooling out of GitHub Linguist statistics.
+frontend/** linguist-detectable=false
+frontend/package-lock.json linguist-detectable=false
+frontend/npm-shrinkwrap.json linguist-detectable=false
+frontend/vite.config.* linguist-detectable=false
+frontend/tailwind.config.* linguist-detectable=false
+frontend/postcss.config.* linguist-detectable=false

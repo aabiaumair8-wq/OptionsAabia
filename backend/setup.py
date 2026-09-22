@@ -14,7 +14,7 @@ extension = Pybind11Extension(
     ],
     include_dirs=[str(ROOT / ".." / "core" / "include")],
     cxx_std=17,
-    extra_compile_args=["-O3", "-march=native", "-fopenmp"],
+    extra_compile_args=["-O3", "-fopenmp"],
     extra_link_args=["-fopenmp"],
 )
 

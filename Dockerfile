@@ -25,7 +25,7 @@ COPY backend/ ./backend/
 
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r backend/requirements.txt \
-    && pip install --no-cache-dir ./backend
+    && pip install --no-cache-dir --no-build-isolation ./backend
 
 # Stage 3: run only the application and its runtime libraries.
 FROM python:3.10-slim AS runtime
